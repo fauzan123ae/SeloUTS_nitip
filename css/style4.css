@@ -1,0 +1,64 @@
+/*STYLE BAGIAN HOBI */
+:root {
+    --primary: #08111c ;
+    --secondary: #01949A;
+}
+
+.hobi {
+    min-height: 110vh;
+    display: block;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hobi::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    bottom: 0;
+    background: linear-gradient(0deg,rgb(33, 33, 33) 10%, rgba(255,255,255,0) 50%);
+}
+
+.hobi h2 {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--secondary);
+}
+
+.hobi .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1.5rem 10rem 0rem 10rem;
+    justify-content: center;
+}
+
+.hobi .row .card {
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 4rem;
+}
+
+.hobi .row .card .card-img {
+    border-radius: 10%;
+    margin-top: 1rem;
+    width: 80%;
+}
+
+.hobi .row .card .card-title {
+    margin-top: 1rem;
+    color: #f4c003;    text-align: center; /* Menengahkan teks */
+}
+
+@media (max-width: 450px) {
+    .hobi {
+        min-height: 170vh;
+    }
+}
+/*STYLE BAGIAN HOBI */

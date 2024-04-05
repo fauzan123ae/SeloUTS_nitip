@@ -1,0 +1,85 @@
+/*STYLE BAGIAN PROFILE*/
+:root {
+    --primary: #08111c ;
+    --secondary: #01949A;
+}
+
+.profile-title {
+    margin: 8rem 5rem 0rem 5rem;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    color: var(--secondary);
+    font-size: 2.5rem;
+}
+
+.profile {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.profile::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    bottom: 0;
+    background: linear-gradient(0deg,rgb(33, 33, 33) 10%, rgba(255,255,255,0) 50%);
+}
+
+.profile .row {
+    display: flex;
+    margin: 0.5rem 7rem 1rem 10rem;
+}
+
+.profile .row .foto {
+    margin: 2rem 4rem 6rem 0.5rem;
+    width: 35%;
+}
+
+.profile .row .foto img {
+    width: 100%;
+    border-radius: 0%;
+}
+
+.profile .row .psaya {
+   margin: 3rem 5rem 5rem 7rem;
+}
+
+.profile .row .psaya p {
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.profile .row .psaya p span {
+    color: var(--secondary);
+    font-weight: bold;
+}
+
+@media (max-width: 450px) {
+    .profile {
+        display: block;
+        position: relative;
+    }
+
+    .profile .row {
+        display: block;
+        justify-content: center;
+        margin: 2rem 2rem;
+    }
+
+    .profile .row .foto {
+        display: block;
+        width: 50%;
+        margin: 4rem 5rem 4.5rem 8rem;
+    }
+}
+/*STYLE BAGIAN PROFILE*/

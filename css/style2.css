@@ -1,0 +1,76 @@
+/*STYLE BAGIAN DAFTAR */
+:root {
+    --primary: #08111c ;
+    --secondary: #01949A;
+}
+
+h2 {
+    margin-top: 6rem;
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--secondary);
+}
+
+.pendaftaran {
+    min-height: 100vh;
+    display: block;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.pendaftaran .input {
+    display: flex;
+    margin: 2rem 13rem 0rem 13rem;
+    background-color: #E5DDC8;
+    justify-content: center;
+}
+
+.pendaftaran .input form .input-group {
+    display: flex;
+    align-items: center;
+    margin-top: 1.5rem;
+    background-color: #333;
+}
+
+.pendaftaran .input form .input-group input {
+    width: 100%;
+    padding: 1rem 4rem 1rem 1rem;
+    font-size: 1rem;
+    background: none;
+    color: #fff;
+}
+
+.pendaftaran .input form button {
+    margin: 2rem 5rem 2rem 6rem;
+    padding: 0.6rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #148F77;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.pendaftaran::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    bottom: 0;
+    background: linear-gradient(0deg,rgb(33, 33, 33) 10%, rgba(255,255,255,0) 50%);
+}
+
+@media (max-width: 450px) {
+    .pendaftaran .input {
+        margin: 2rem 2rem 0rem 2rem;
+    }
+
+    .pendaftaran {
+        min-height: 70vh;
+    }
+}
+/*STYLE BAGIAN DAFTAR */
